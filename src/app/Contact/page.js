@@ -29,9 +29,12 @@ const Page = () => {
             <p>8WCP+PC5, Central Workshop Rd, Inside NIT Calicut Campus, Kattangal, Kerala 673601</p>
           </div>
           <div className={styles.infoItem}>
-            <h3>Team Captain: Karthik Jayaraj</h3>
-            <p>Email: <a href="mailto:karthikjayarajkrply@gmail.com">karthikjayarajkrply@gmail.com</a></p>
-            <p>Phone: 9778532290</p>
+            <h3>Team Captain: Krishnachandran R</h3>
+            <p>Email: <a href="mailto:krishnachandran_b220972me@nitc.ac.in">krishnachandran_b220972me@nitc.ac.in</a></p>
+            <p>Phone: 7356822552</p>
+            <h3>Team Captain: Piyush Kumar</h3>
+            <p>Email: <a href="mailto:piyush_b221115me@nitc.ac.in">piyush_b221115me@nitc.ac.in</a></p>
+            <p>Phone: 9693292761</p>
           </div>
         </div>
       </div>
