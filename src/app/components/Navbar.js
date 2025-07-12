@@ -30,7 +30,7 @@ const Navbar = () => {
         const response = await axios.get('/api/verify-token', {
           withCredentials: true
         });
-        
+
         if (response.data.valid) {
           dispatch(login());
         } else {
@@ -67,7 +67,6 @@ const Navbar = () => {
     }
   };
 
-
   useEffect(() => {
     const isDesktop = window.innerWidth >= 1024;
 
@@ -103,7 +102,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className={styles.links} ref={el => { 
+        <div className={styles.links} ref={el => {
           if (el) desktopLinksRef.current = Array.from(el.querySelectorAll(`.${styles.link}`));
         }}>
           <Link href="/" className={`${styles.sidebarLink} ${pathname === '/' ? styles.active : ''}`}>Home</Link>
@@ -123,13 +122,15 @@ const Navbar = () => {
           <Link href="/Contact" className={`${styles.sidebarLink} ${pathname === '/Contact' ? styles.active : ''}`}>Contact</Link>
         </div>
 
-        {/* Desktop Login/Logout Button */}
-        <button
-          onClick={handleAuth}
-          className={styles.authButton}
-        >
-          {isLogin ? 'Logout' : 'Login'}
-        </button>
+        {/* Desktop Logout Button Only */}
+        {isLogin && (
+          <button
+            onClick={handleAuth}
+            className={styles.authButton}
+          >
+            Logout
+          </button>
+        )}
 
         <div className={styles.rig}>
           <Link href="/">
@@ -153,7 +154,7 @@ const Navbar = () => {
 
         <div
           className={`${styles.sidebar} ${isSidebarVisible ? styles.visible : styles.hidden}`}
-          ref={el => { 
+          ref={el => {
             if (el) sidebarLinksRef.current = Array.from(el.querySelectorAll(`.${styles.sidebarLink}`));
           }}
         >
@@ -183,13 +184,15 @@ const Navbar = () => {
 
           <Link href="/Contact" className={`${styles.sidebarLink} ${pathname === '/Contact' ? styles.active : ''}`}>Contact</Link>
 
-          {/* Mobile Login/Logout Button */}
-          <button
-            onClick={handleAuth}
-            className={styles.sidebarAuthButton}
-          >
-            {isLogin ? 'Logout' : 'Login'}
-          </button>
+          {/* Mobile Logout Button Only */}
+          {isLogin && (
+            <button
+              onClick={handleAuth}
+              className={styles.sidebarAuthButton}
+            >
+              Logout
+            </button>
+          )}
         </div>
       </div>
       <div className={styles.box}></div>
