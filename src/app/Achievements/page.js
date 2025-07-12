@@ -59,7 +59,7 @@ export default function AchievementReport() {
 
         {/* Section content */}
         <section className={styles.section} ref={el => sectionsRef.current[0] = el}>
-          <h2 className={styles.sectionTitle}>Origin Workshop</h2>
+          <h2 className={styles.sectionTitle}>Origo Workshop</h2>
           <p className={styles.sectionContent}>
             Conducted a two-day hands-on workshop introducing robotics for B23 students of NIT Calicut.
           </p>
