@@ -12,35 +12,32 @@ const Carousel = () => {
   const [swiperRef, setSwiperRef] = useState(null);
 
   const slides = [
-    { id: 1, image: '/cardImages/card1.jpg', name: 'Avibot' },
-    { id: 2, image: '/cardImages/card2.jpg', name: 'Quadruped' },
-    { id: 3, image: '/cardImages/card3.jpg', name: 'Hospital Bed'}
+    { id: 1, image: '/cardImages/avibot.jpg', name: 'Avibot' },
+    { id: 2, image: '/cardImages/quadruped.jpg', name: 'Quadruped' },
+    { id: 3, image: '/cardImages/hospital-bed.jpg', name: 'Hospital Bed'}
   ];
 
   return (
     <>
       <div className={styles.title}>
-        <div>OUR PROJECTS</div>
+        <div>PROJECTS</div>
       </div>
       <div className={styles.body}>
-        <div className={styles.container}>
+        {/* <div className={styles.container}> */}
           <Swiper
             onSwiper={setSwiperRef}
             breakpoints={{
               320: {
                 slidesPerView: 1,
-                spaceBetween: 20,
               },
               768: {
                 slidesPerView: 2,
-                spaceBetween: 30,
               },
               1024: {
                 slidesPerView: 3,
-                spaceBetween: 40,
               }
             }}
-            pagination={{ type: 'fraction' }}
+            pagination={{ type: 'bullets' }}
             navigation={true}
             modules={[Pagination, Navigation]}
             className={styles.mySwiper}
@@ -53,8 +50,8 @@ const Carousel = () => {
                       src={slide.image} 
                       alt={slide.name} 
                       fill
-                      priority
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      // priority
+                      // sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className={styles.nameproject}>
@@ -65,7 +62,7 @@ const Carousel = () => {
             ))}
           </Swiper>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };

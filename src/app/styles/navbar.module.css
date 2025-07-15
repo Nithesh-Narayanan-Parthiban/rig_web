@@ -1,4 +1,7 @@
 /* Main navbar styles */
+
+@import url('../fonts/fonts.css');
+
 .links a {  
   color: inherit; 
   transition: transform 0.3s ease, color 0.3s ease;
@@ -64,6 +67,7 @@
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 400;
   color: #2B4257;
@@ -98,6 +102,7 @@
   margin: 1rem;
   text-transform: capitalize;
   font-size: 18px;
+  font-family: "Raleway";
   text-decoration: none;
   color: inherit;
   transition: color 0.2s ease-in-out;

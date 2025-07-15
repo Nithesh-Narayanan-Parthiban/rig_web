@@ -27,6 +27,7 @@ const page = () => {
         </div>
       </div>
       <div className={styles.content}>
+        {/* <hr></hr> */}
         <div className={styles.line1}></div>
         <div className={styles.title}>Where it all began </div>
         <div className={styles.line1}></div>

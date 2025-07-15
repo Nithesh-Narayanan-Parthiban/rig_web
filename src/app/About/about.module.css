@@ -63,7 +63,9 @@
 
 .image {
     width: 35rem;
-    @media(max-width:1000px){
+}
+@media(max-width:1000px){
+    .image {
         width: 90vw;
         height: 50vw;
     }
@@ -96,20 +98,25 @@
 }
 .question{
     font-size: 2.5rem;
-    @media(max-width:300px){
-        font-size: 1.5rem;
-    } 
-
+    
 }
+@media(max-width:300px){
+    .question {
+        font-size: 1.5rem;
+    }
+} 
 
 .answer{
     font-size: 4rem;
     text-align: center;
-    @media(max-width:400px){
+}
+@media(max-width:400px){
+    .answer {
         font-size: 3rem;
     }
-    @media(max-width:300px){
+}
+@media(max-width:300px){
+    .answer {
         font-size: 2rem;
-
     }
 }

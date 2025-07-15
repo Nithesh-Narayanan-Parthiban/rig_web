@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from '@/app/styles/landing.module.css';
 
 export const Landing = () => {
-  const images = ['/img2.png', '/img1.png' ,'/img3.jpg','/eventImages/image1.jpeg']; // Array of images
+  const images = ['/group-photo2.png', '/group-photo.png' ,'/expo-explanation.jpg','/eventImages/audience.jpeg']; // Array of images
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const newsItems = [
@@ -30,7 +30,6 @@ export const Landing = () => {
   }, [images.length]);
 
   return (
-    <> 
       <div className={styles.landing}>
         <div className={styles.hero}>
           <div className={styles.img}>
@@ -39,13 +38,14 @@ export const Landing = () => {
               alt='Rig insights'
               layout="fill"
               style={{ objectFit: 'cover' }} // Adjust this as per your need
-              priority
+              // priority
             />
           </div>
-        <div className={styles.right}>
-          <div className={styles.text}>
-            Latest news....
-            <hr />
+          <div className={styles.right}>
+            <div className={styles.text}>
+              Latest news
+              <hr />
+            </div>
             <div className={styles.newsTicker}>
               <div className={styles.news}>
                 {newsItems.map((item, index) => (
@@ -54,12 +54,10 @@ export const Landing = () => {
                   </div>
                 ))}
               </div>
-                </div>
             </div>
           </div>
         </div>
       </div>
-    </>
   );
 };
 

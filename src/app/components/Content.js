@@ -6,7 +6,7 @@ export const Content = () => {
   return (
     <>
       <div className={styles.wrapper}>
-        <div className={styles.head}>OUR MISSION</div>
+        <div className={styles.head}>MISSION</div>
         <div className={styles.body}>
           <div className={styles.content}>
             <div className={styles.left}>
