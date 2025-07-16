@@ -3,12 +3,15 @@
     color: black;
     overflow: hidden;
     text-align: justify;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .backbox {
     background-color: #091235;
-    margin-left: 2%;
-    margin-right: 2%;
+    /* margin-left: 2%; */
+    /* margin-right: 2%; */
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -18,15 +21,17 @@
 
 .aboutUs {
     color: white;
+    font-family: 'Raleway';
     font-size: 1.8rem;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     display: inline;
+    margin-bottom: 2rem;
 }
 
 .dots {
     height: 20px;
     width: 250px;
-    color: white;
+    /* color: white; */
     display: flex;
     justify-content: space-between;
 }
@@ -42,7 +47,6 @@
 
 .quote {
     color: white;
-    font-weight: bold;
     font-style: italic;
     padding-bottom: 2rem;
 }
@@ -56,19 +60,11 @@
     flex-direction: row;
     color: white;
     gap: 3rem;
-    @media(max-width: 1000px){
-        flex-direction: column-reverse;
-    }
+    
 }
 
 .image {
     width: 35rem;
-}
-@media(max-width:1000px){
-    .image {
-        width: 90vw;
-        height: 50vw;
-    }
 }
 
 .line1 {
@@ -86,30 +82,30 @@
 
 .where {
     margin-top: 2%;
-    padding-bottom: 2%;
+    /* padding-bottom: 2%; */
 }
 
 .qna{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    justify-content: center;
+    /* padding: 2rem; */
+    /* justify-content: center; */
 }
 .question{
     font-size: 2.5rem;
-    
+    margin: 5%;
 }
-@media(max-width:300px){
-    .question {
-        font-size: 1.5rem;
-    }
-} 
 
 .answer{
     font-size: 4rem;
+    line-height: 4.5rem;
     text-align: center;
+    margin: 2%;
+    margin-bottom: 7%;
+    text-wrap: balance;
 }
+
 @media(max-width:400px){
     .answer {
         font-size: 3rem;
@@ -118,5 +114,17 @@
 @media(max-width:300px){
     .answer {
         font-size: 2rem;
+    }
+    .question {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:1000px){
+    .image {
+        width: 90vw;
+        height: 50vw;
+    }
+    .container {
+        flex-direction: column-reverse;
     }
 }

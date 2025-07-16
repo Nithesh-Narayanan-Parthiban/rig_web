@@ -38,7 +38,7 @@ export const Landing = () => {
               alt='Rig insights'
               layout="fill"
               style={{ objectFit: 'cover' }} // Adjust this as per your need
-              // priority
+              priority
             />
           </div>
           <div className={styles.right}>

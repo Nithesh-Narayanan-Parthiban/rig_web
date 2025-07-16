@@ -40,7 +40,9 @@
   top: 0;
   right: 0;
   height: 100%;
-  width: 70%;
+  /* width: 70%; */
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: rgba(185, 189, 244, 0.9);
   backdrop-filter: blur(10px);
   z-index: 999;

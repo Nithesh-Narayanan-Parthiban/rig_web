@@ -24,6 +24,17 @@ const Navbar = () => {
   const logoRef = useRef(null);
   const rigLogoRef = useRef(null);
 
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/About', label: 'About' },
+    { href: '/Projects', label: 'Projects' },
+    { href: '/Achievements', label: 'Achievements' },
+    { href: '/Events', label: 'Events' },
+    { href: '/Team', label: 'Team' }
+  ];
+  const contactLink = [{ href: '/Team', label: 'Team' }]
+  const addLinks = [{ href: '/addProjects', label: 'Add-Projects' }, { href: '/addEvents', label: 'Add-Events' }]
+
   useEffect(() => {
     const checkAuthStatus = async () => {
       try {
@@ -67,6 +78,19 @@ const Navbar = () => {
     }
   };
 
+ function renderLinks(links, pathname, styles) {
+  return links.map(({ href, label }) => (
+    <Link
+      key={href}
+      href={href}
+      className={`${styles.sidebarLink} ${pathname === href ? styles.active : ''}`}
+    >
+      {label}
+    </Link>
+  ));
+}
+ 
+
   useEffect(() => {
     const isDesktop = window.innerWidth >= 1024;
 
@@ -105,12 +129,8 @@ const Navbar = () => {
         <div className={styles.links} ref={el => {
           if (el) desktopLinksRef.current = Array.from(el.querySelectorAll(`.${styles.link}`));
         }}>
-          <Link href="/" className={`${styles.sidebarLink} ${pathname === '/' ? styles.active : ''}`}>Home</Link>
-          <Link href="/About" className={`${styles.sidebarLink} ${pathname === '/About' ? styles.active : ''}`}>About</Link>
-          <Link href="/Projects" className={`${styles.sidebarLink} ${pathname === '/Projects' ? styles.active : ''}`}>Projects</Link>
-          <Link href="/Achievements" className={`${styles.sidebarLink} ${pathname === '/Achievements' ? styles.active : ''}`}>Achievements</Link>
-          <Link href="/Events" className={`${styles.sidebarLink} ${pathname === '/Events' ? styles.active : ''}`}>Events</Link>
-          <Link href="/Team" className={`${styles.sidebarLink} ${pathname === '/Team' ? styles.active : ''}`}>Team</Link>
+
+          {renderLinks(navLinks,pathname,styles)}
 
           {isLogin && (
             <>
@@ -119,7 +139,8 @@ const Navbar = () => {
             </>
           )}
 
-          <Link href="/Contact" className={`${styles.sidebarLink} ${pathname === '/Contact' ? styles.active : ''}`}>Contact</Link>
+          {renderLinks(contactLink,pathname,styles)}
+
         </div>
 
         {/* Desktop Logout Button Only */}
@@ -168,19 +189,15 @@ const Navbar = () => {
             </svg>
           </button>
 
-          <Link href="/" className={`${styles.sidebarLink} ${pathname === '/' ? styles.active : ''}`}>Home</Link>
-          <Link href="/About" className={`${styles.sidebarLink} ${pathname === '/About' ? styles.active : ''}`}>About</Link>
-          <Link href="/Projects" className={`${styles.sidebarLink} ${pathname === '/Projects' ? styles.active : ''}`}>Projects</Link>
-          <Link href="/Achievements" className={`${styles.sidebarLink} ${pathname === '/Achievements' ? styles.active : ''}`}>Achievements</Link>
-          <Link href="/Events" className={`${styles.sidebarLink} ${pathname === '/Events' ? styles.active : ''}`}>Events</Link>
-          <Link href="/Team" className={`${styles.sidebarLink} ${pathname === '/Team' ? styles.active : ''}`}>Team</Link>
+          {renderLinks(navLinks,pathname,styles)}
 
           {isLogin && (
             <>
-              <Link href="/addEvents" className={`${styles.sidebarLink} ${pathname === '/addEvents' ? styles.active : ''}`}>Add-Events</Link>
-              <Link href="/addProjects" className={`${styles.sidebarLink} ${pathname === '/addProjects' ? styles.active : ''}`}>Add-Projects</Link>
+              {renderLinks(addLinks,pathname,styles)}
             </>
           )}
+
+          {renderLinks([{ href: '/Contact', label: 'Contact' }],pathname,styles)}
 
           <Link href="/Contact" className={`${styles.sidebarLink} ${pathname === '/Contact' ? styles.active : ''}`}>Contact</Link>
 

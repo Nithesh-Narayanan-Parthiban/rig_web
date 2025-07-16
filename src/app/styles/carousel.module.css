@@ -1,51 +1,44 @@
 @import url('../fonts/fonts.css');
 
-.title {
-    padding-top: 30px;
-    width: 100%;
-    color: black;
-    background-color: aliceblue;
+.text {
+    margin-top: 2rem;
     text-align: center;
+    width: 100%;
     font-family: "Raleway";
+    font-size: 25px;
+    font-weight: bolder;
+    word-break: 1px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.title {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    background-color: aliceblue;
     font-size: 50px;
-    /* padding-left: 50px; */
     letter-spacing: 7px;
     word-spacing: 7px;
     font-weight: bold;
-    
 }
 
-/* @media(max-width: 768px) {
-  .title {
-    font-size: 1rem;
-  }
-} */
+.name {
+    word-spacing: 1px;
+}
 
 .body {
     background-color: aliceblue;
-    /* padding: 40px; */
-    /* max-width: 1000px; */
 }
 
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-} */
-
 .card {
-    /* overflow: hidden; */
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* max-width: 500px; */
 }
 
 .image {
-    /* width: 100%; */
     height: 150px;
     aspect-ratio: 16/9;
     position: relative;
@@ -53,66 +46,19 @@
     overflow: hidden;
 }
 
-.image img {
-    /* object-fit: cover !important; */
-    /* object-fit: scale-down !important; */
-    border-radius: 15px;
-}
-
-.nameproject {
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
-}
-
-.name {
-    font-family: "Raleway";
-    font-size: 25px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    color: #000;
-    /* padding-bottom: 10px; */
-}
 
 .mySwiper {
     padding: 20px ;
     align-items: center;
     justify-items: center;
-
 }
 
-/* Responsive styles */
-/* @media (min-width: 1024px) {
-    .container {
-        padding: 0 40px;
-    }
-    
-    .name {
-        font-size: 25px;
-    }
-} */
-
-/* @media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        padding: 0 30px;
-    }
-    
-    .name {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        padding: 0 20px;
-    }
-    
+@media(max-width: 600px) {
     .name {
         font-size: 15px;
     }
-    
-    .image {
-        aspect-ratio: 4/3;
+
+    .title {
+        font-size: 19px;
     }
-} */
+}

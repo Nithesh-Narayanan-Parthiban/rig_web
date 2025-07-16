@@ -10,11 +10,11 @@ const page = () => {
       <div>
         <div className={styles.backbox}>
           <span className={styles.aboutUs}>ABOUT US</span>
-          <div className={styles.dots}>
-            {[...Array(12)].map((_, index) => (
+          {/* <div className={styles.dots}>
+            {[...Array(12)].map((_,index) => (
               <div key={index} className={styles.dot}></div>
             ))}
-          </div>
+          </div> */}
           <div className={styles.quote}>
             Driven by Innovation, Fueled by Passion. Explore the Boundless Horizons of Robotics.
           </div>

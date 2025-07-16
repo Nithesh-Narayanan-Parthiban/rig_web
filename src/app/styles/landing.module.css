@@ -5,6 +5,8 @@
     overflow: hidden;
     width: 100vw; /*Full viewport width*/
     height: 100vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .hero {
@@ -15,15 +17,17 @@
     align-items: center;
     width: 100%; /* Full viewport width */
     height: 100%;
+    margin-bottom: 2rem;
 }
 
 .img {
     border-radius: 30px;
     position: absolute; /* Ensure it covers the whole hero section */
-    width: 100%;
+    width: 95%;
     height: 100%;
     overflow: hidden;
     margin-right: 12px;
+    /* margin-top: 2rem; */
 }
 
 .right {
@@ -38,7 +42,7 @@
 
 .text {
     color: #fff;
-    font-size: 2.5vw;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     text-align: center;
@@ -63,7 +67,7 @@
 }
 
 .newsItem {
-    font-size: 2.5vw;
+    font-size: 15px;
     font-family: 'Raleway', sans-serif;
     color: #fff;
     white-space: wrap;

@@ -19,11 +19,10 @@ const Carousel = () => {
 
   return (
     <>
-      <div className={styles.title}>
-        <div>PROJECTS</div>
+      <div className={`${styles.text} ${styles.title}`}>
+        PROJECTS
       </div>
       <div className={styles.body}>
-        {/* <div className={styles.container}> */}
           <Swiper
             onSwiper={setSwiperRef}
             breakpoints={{
@@ -54,9 +53,7 @@ const Carousel = () => {
                       // sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
-                  <div className={styles.nameproject}>
-                    <span className={styles.name}>{slide.name}</span>
-                  </div>
+                    <span className={`${styles.text} ${styles.name}`}>{slide.name}</span>
                 </div>
               </SwiperSlide>
             ))}
