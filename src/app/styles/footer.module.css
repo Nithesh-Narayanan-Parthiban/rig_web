@@ -77,7 +77,8 @@
 .boxmenu {
   width: 90%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content:space-between;
   gap: 1rem; /* Adds spacing between menu items */
 }
 
@@ -90,6 +91,7 @@
 .list {
   letter-spacing: 1px;
   text-align: center;
+  margin-bottom: 2%;
 }
 
 .line {
@@ -105,7 +107,7 @@
   justify-content: space-around;
   flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
   align-items: start;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   gap: 1rem;
 }
 
@@ -124,8 +126,8 @@
   color: #8aaccc;
   /* font-weight: bold; */
   font-size: 1.2rem; /* Makes the "ADDRESS" label more prominent */
-  margin-right: 20px;
-  margin-right: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
   
 }
 

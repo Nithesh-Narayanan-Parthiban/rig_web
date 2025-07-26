@@ -18,7 +18,12 @@
 }
 
 .head {
+    /* width: 80%; */
+    background-color: rgba(109, 147, 120, 0.7);
+    border-radius: 2rem;
+    text-align: center;
     margin-bottom: 2rem;   
+    padding: 1rem;
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 7px;

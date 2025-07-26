@@ -1,6 +1,5 @@
 @import url('../fonts/fonts.css');
 
-
 .root {
     background-color: #f9f9f9;
     /* height: 100vh; */
@@ -10,17 +9,26 @@
     align-items: flex-start;  
     /* overflow-y: hidden; */
 }
+
+.headingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
 .heading {
   
-    background-color: #fff;
+    letter-spacing: 0.4rem;
+    /* background-color: #fff; */
+    background-color: rgba(109, 147, 120, 0.7);
     font-size: 3rem;
-    font-family: 'Just Another Hand', cursive;
+    border-radius: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    font-family: 'Raleway';
     text-align: center;
     color: #242754;
-    margin-bottom: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
-    /* padding: 1rem 0; */
-    margin: 0;
   }
   
 .container {
@@ -73,4 +81,8 @@
   /* font-size: 1.2rem; */
   font-family: Arial, sans-serif;
   line-height: 1.5;
+}
+
+.root p {
+  color: black;
 }

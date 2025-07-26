@@ -32,6 +32,8 @@ const Page = () => {
             <h3>Team Captain: Krishnachandran R</h3>
             <p>Email: <a href="mailto:krishnachandran_b220972me@nitc.ac.in">krishnachandran_b220972me@nitc.ac.in</a></p>
             <p>Phone: 7356822552</p>
+          </div>
+          <div className={styles.infoItem}>
             <h3>Team Captain: Piyush Kumar</h3>
             <p>Email: <a href="mailto:piyush_b221115me@nitc.ac.in">piyush_b221115me@nitc.ac.in</a></p>
             <p>Phone: 9693292761</p>

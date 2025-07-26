@@ -1,9 +1,15 @@
 @import url('../fonts/fonts.css');
 
+.textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .text {
     margin-top: 2rem;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     font-family: "Raleway";
     font-size: 25px;
     font-weight: bolder;
@@ -13,12 +19,18 @@
 }
 
 .title {
-    margin-top: 5rem;
-    padding-top: 2rem;
-    background-color: aliceblue;
+    margin-top: 3rem;
+    /* background-color: aliceblue; */
+    /* margin-bottom: 3rem; */
+    text-align: center;
+    width: auto;
+    background-color: rgba(109, 147, 120, 0.7);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
     font-size: 50px;
     letter-spacing: 7px;
-    word-spacing: 7px;
     font-weight: bold;
 }
 
@@ -27,19 +39,21 @@
 }
 
 .body {
-    background-color: aliceblue;
+    content: "";
+    /* background-color: aliceblue; */
+    /* background-color: rgb(48, 184, 86); */
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .image {
-    height: 150px;
+    height: 9rem;
     aspect-ratio: 16/9;
     position: relative;
     border-radius: 15px;
@@ -51,7 +65,13 @@
     padding: 20px ;
     align-items: center;
     justify-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
+
+/* .mySwiper .swiper-button-prev{
+    color: beige;
+} */
 
 @media(max-width: 600px) {
     .name {
@@ -60,5 +80,9 @@
 
     .title {
         font-size: 19px;
+    }
+
+    .image {
+        height: 80px;
     }
 }

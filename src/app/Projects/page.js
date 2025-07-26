@@ -62,7 +62,9 @@ function Page() {
   return (
     <>
       <Navbar />
-      <h1 className={styles.heading}>Here are some of our Projects!!!</h1>
+      <div className={styles.headingBox}>
+        <div className={styles.heading}>PROJECTS</div>
+      </div>
       <div className={styles.root}>
         <div className={styles.container}>
           {projects.length > 0 ? (

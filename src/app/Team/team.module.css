@@ -1,8 +1,11 @@
+@import url('../fonts/fonts.css');
+
 .backbeam {
     background-color: white;
     color: black;
     padding-left: 40px;
     padding-right: 40px;
+    font-family: 'Raleway';
 }
 
 .body {
@@ -11,6 +14,7 @@
 }
 
 .teamH {
+    letter-spacing: 0.4rem;
     padding-top: 20px;
     display: flex;
     justify-content: center;
@@ -182,10 +186,13 @@
 .yearSelector label {
     margin-right: 10px;
     font-size: 16px;
-    color: #333;
+    color: rgba(36, 39, 84, .6); /* Semi-transparent background */
+    /* color: #333; */
 }
 
 .yearSelector select {
+
+    background-color: rgba(36, 39, 84, .6); /* Semi-transparent background */
     padding: 5px 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -195,7 +202,7 @@
 }
 
 .yearSelector select:focus {
-    border-color: #0070f3;
+    /* border-color: #0070f3; */
     box-shadow: 0 0 0 2px rgba(0, 112, 255, 0.2);
 }
 

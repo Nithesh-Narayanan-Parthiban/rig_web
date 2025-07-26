@@ -114,8 +114,8 @@ const Footer = () => {
             <a className={styles.list} href="/Projects">PROJECTS</a>
             <a className={styles.list} href="/Achievements">ACHEIVEMENTS</a>
             <a className={styles.list} href="/Events">EVENTS</a>
-            <a className={styles.list} href="/Eeam">TEAM</a>
-            <a className={styles.list} href="/Contacts">CONTACTS</a>
+            <a className={styles.list} href="/Team">TEAM</a>
+            <a className={styles.list} href="/Contact">CONTACTS</a>
           </div>
         </div>
 

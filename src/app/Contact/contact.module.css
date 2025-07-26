@@ -2,20 +2,20 @@
 
 .container {
   display: flex;
-  height:100vh;
+  /* height:100vh; */
   flex-direction: column;
-    padding: 2rem;
-    background-color: #fff;
-    color: #666;
-    font-family: Arial, sans-serif;
-    @media(max-width: 900px){
-      height: 100vh;
-    }
-    @media(max-width: 300px){
-      height: 150vh;
-    }
-    overflow: hidden;
-  }
+  padding: 2rem;
+  background-color: #fff;
+  color: #666;
+  font-family: 'Raleway';
+  /* @media(max-width: 900px){
+    height: 100vh;
+  } */
+  /* @media(max-width: 300px){
+    height: 150vh;
+  } */
+  overflow: hidden;
+}
 
   .header {
     background-color: #fff;
@@ -32,7 +32,8 @@
   }
   .header p{
     font-size: 1.5rem;
-    color: #666;@media(max-width: 600px) {
+    color: #666;
+    @media(max-width: 600px) {
       font-size: 1rem;
     }
   }
@@ -42,6 +43,12 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  .contactInfo .infoItem {
+    margin: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
   .contactInfo .infoItem h3 {
     font-size: 1.2rem;
     color: #0070f3;

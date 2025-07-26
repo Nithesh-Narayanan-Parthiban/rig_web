@@ -41,7 +41,7 @@ export const Landing = () => {
               priority
             />
           </div>
-          <div className={styles.right}>
+          {/*<div className={styles.right}>
             <div className={styles.text}>
               Latest news
               <hr />
@@ -55,7 +55,7 @@ export const Landing = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
   );

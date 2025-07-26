@@ -32,7 +32,7 @@ const Navbar = () => {
     { href: '/Events', label: 'Events' },
     { href: '/Team', label: 'Team' }
   ];
-  const contactLink = [{ href: '/Team', label: 'Team' }]
+  const contactLink = [{ href: '/Contact', label: 'Contact' }]
   const addLinks = [{ href: '/addProjects', label: 'Add-Projects' }, { href: '/addEvents', label: 'Add-Events' }]
 
   useEffect(() => {
@@ -198,8 +198,6 @@ const Navbar = () => {
           )}
 
           {renderLinks([{ href: '/Contact', label: 'Contact' }],pathname,styles)}
-
-          <Link href="/Contact" className={`${styles.sidebarLink} ${pathname === '/Contact' ? styles.active : ''}`}>Contact</Link>
 
           {/* Mobile Logout Button Only */}
           {isLogin && (

@@ -17,7 +17,6 @@ const page = () => {
     <Provider store={store}>
       <Navbar/>
       <Landing/>
-
       <Carousel/>
       <Content/>
       <Events/>
@@ -27,4 +26,4 @@ const page = () => {
   )
 }
 
-export default page
+export default page;

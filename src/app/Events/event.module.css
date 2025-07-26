@@ -3,85 +3,50 @@
 .root {
   background-color: white;
   height: auto;
-  color: white;
   overflow: hidden;
+  font-family: 'Raleway';
 }
 
 .container {
-  position: relative;
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 7rem); 
+  /* height: calc(100vh - 7rem);  */
   animation: changeBackground 15s infinite; 
-  overflow: hidden;
   padding: 2rem;
 }
 
 .box {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 4; 
   color: white;
   padding: 2rem;
 }
 
-.details { 
-  position: relative;
-  background-color: rgba(0, 0, 0, 0); 
-  padding: 2rem;
-  width: 80rem;
-  text-align: center;
-  z-index: 4;
-  margin-bottom: 3rem; 
-  width: 90%;
-}
-
-.details::before {
-  line-height: 10rem;
-  font-size: 4rem;
-  font-weight: bold; 
-  color: #242754; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent; 
-  transform: translate(-2rem, -2rem);
-  z-index: -5;
-}
-
 .heading {
+  letter-spacing: 1rem;
   font-size: 3rem;
-  font-family: 'Just Another Hand', cursive;
-  font-weight: bold; 
-  color: #eff0ec; 
-  margin: 0;
-  text-shadow: #242754;
-  text-decoration: underline;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  padding-top: 2rem;
+  /* color: #eff0ec;  */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); */
   margin-bottom: 2rem; 
 }
 
 .description {
   font-size: 1.2rem;
-  font-family: Arial, sans-serif;
   line-height: 1.5;
-  color: #d3d3d3; 
+  color: rgb(233, 233, 233); 
+  background-color: rgba(36, 39, 84, .6); /* Semi-transparent background */
   margin-top: 1rem;
-  margin-bottom: 3rem;
-  padding: 1rem; 
+  /* margin-bottom: 3rem; */
+  padding: 1.5rem; 
   border: 2px solid #d3d3d3; 
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.6); 
+  /* background-color: rgba(0, 47, 202, 0.575);  */
 }
 
 @keyframes changeBackground {
   0% {
-    background-image: url('/eventImages/image1.jpeg');
+    background-image: url('/eventImages/audience.jpeg');
   }
   20% {
     background-image: url('/eventImages/image2.jpeg');
@@ -96,7 +61,7 @@
     background-image: url('/eventImages/image5.jpg');
   }
   100% {
-    background-image: url('/eventImages/image1.jpeg');
+    background-image: url('/eventImages/audience.jpeg');
   }
 }
 @media (max-width: 768px) {

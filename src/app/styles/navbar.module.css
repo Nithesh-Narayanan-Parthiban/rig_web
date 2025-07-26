@@ -252,10 +252,13 @@
   margin-left: 1rem;
   transition: background-color 0.2s;
   /* css of this button gettting override here */
-  @media(max-width: 1100px) {
+  
+}
+
+@media(max-width: 1100px) {
+  .authButton {
     display: none;  /* Hide mobile version of authButton */
   }
 }
-
 /* Hide the mobile login button when on desktop */
 

@@ -19,9 +19,9 @@ const Carousel = () => {
 
   return (
     <>
-      <div className={`${styles.text} ${styles.title}`}>
-        PROJECTS
-      </div>
+    <div className={styles.textBox}>
+      <div className={`${styles.text} ${styles.title}`}>PROJECTS</div>
+    </div>
       <div className={styles.body}>
           <Swiper
             onSwiper={setSwiperRef}
@@ -42,7 +42,7 @@ const Carousel = () => {
             className={styles.mySwiper}
           >
             {slides.map((slide) => (
-              <SwiperSlide key={slide.id}>
+              <SwiperSlide key={slide.id} className={styles.mySwiperSlide}>
                 <div className={styles.card}>
                   <div className={styles.image}>
                     <Image 
@@ -59,7 +59,6 @@ const Carousel = () => {
             ))}
           </Swiper>
         </div>
-      {/* </div> */}
     </>
   );
 };
